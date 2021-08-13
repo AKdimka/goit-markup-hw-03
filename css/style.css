@@ -166,6 +166,7 @@ nav {
 	display: flex;
 }
 .features-item {
+	width: calc((100% - 120px) / 4);
 }
 .features-item:not(:first-child) {
 	margin-left: var(--item-gap);
