@@ -83,9 +83,6 @@ nav {
 	display: flex;
 
 	margin-left: 93px;
-
-	padding-top: 32px;
-	padding-bottom: 32px;
 }
 .nav-item:not(:first-child) {
 	margin-left: 50px;
@@ -93,6 +90,7 @@ nav {
 .nav-item {
 }
 .nav__link {
+	display: block;
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
@@ -132,6 +130,9 @@ nav {
 	font-size: 44px;
 	line-height: 1.36;
 
+	margin-right: 237px;
+	margin-left: 237px;
+
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 
@@ -160,7 +161,7 @@ nav {
 .features-section {
 }
 .title-hiden {
-	display: none;
+	visibility: hidden;
 }
 .features {
 	display: flex;
@@ -194,14 +195,13 @@ nav {
 
 /* -------Чем мы занимаемся------- */
 .skill-section {
+	padding-top: 0;
 }
 .skill-title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.16;
 	text-align: center;
-
-	margin-top: 94px;
 
 	color: var(--secondary-text-color);
 }
@@ -238,11 +238,9 @@ nav {
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 }
-.card-thumb {
-}
 .card-content {
-	margin-top: 30px;
-	margin-bottom: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 .workers__card-title {
 	font-weight: 500;
@@ -266,13 +264,16 @@ nav {
 	background: var(--secondary-bg);
 }
 .footer-logo {
+	color: var(--bg-color);
 }
 .address {
+	margin-top: 20px;
 }
 .street {
 	color: var(--bg-color);
 }
-.address-item {
+.address-item:not(:first-child) {
+	margin-top: 9px;
 }
 .address-link {
 	font-style: normal;
@@ -288,6 +289,8 @@ nav {
 .filter-section {
 	display: flex;
 	justify-content: center;
+
+	margin-bottom: 50px;
 }
 .filter-item:not(:first-child) {
 	margin-left: 8px;
@@ -299,8 +302,14 @@ nav {
 	font-size: 16px;
 	line-height: 1.6;
 
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-right: 22px;
+	padding-left: 22px;
+
 	text-align: center;
 	color: var(--secondary-text-color);
+	border: transparent;
 
 	background: var(--third-bg);
 	border-radius: 4px;
@@ -311,10 +320,8 @@ nav {
 	display: flex;
 	flex-wrap: wrap;
 
-	padding-top: 50px;
-
-	margin-top: -1 * var(--item-gap);
-	margin-left: -1 * var(--item-gap);
+	margin-top: calc(-1 * var(--item-gap));
+	margin-left: calc(-1 * var(--item-gap));
 }
 .project-item {
 	margin-top: var(--item-gap);
